@@ -10,7 +10,7 @@ function draw() {
   background(200);
   //rotate(mouseX);
   rotateX(frameCount * 0.01);
-  //rotateY(frameCount * 0.01);
+  rotateY(frameCount * 0.01);
   texture(img);
   box(100);
   //console.log(frameCount);
