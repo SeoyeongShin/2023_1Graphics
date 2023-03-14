@@ -1,4 +1,4 @@
-# 2023-1Graphics
+# 2023_1Graphics
 Seoyeong Shin's Graphics Class
 
 ## Graphics를 학습
