@@ -32,7 +32,7 @@ function draw() {
 }
 
 ### 2.3. 실행 결과
-
+<img src="[/path/to/img.jpg](https://raw.githubusercontent.com/SeoyeongShin/2023_1Graphics/main/img/result/box_texture_result.jpg)" width="450px" height="300px" title="px(픽셀) 크기 설정" alt="RubberDuck"></img><br/>
 
 ## 3. Eye Class 구현
 ### 3.1. 요구사항 도출
