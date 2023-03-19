@@ -14,6 +14,7 @@
   * ㅇ
 ### 2.2. Code 
 ```javascript
+// 3D&Texture
 let img;
 function preload(){
   img = loadImage("https://raw.githubusercontent.com/SeoyeongShin/2023_1Graphics/main/img/bird_parrot.png");
@@ -88,7 +89,7 @@ class Eye {
 ```
 
 ### 3.3. 실행 결과
-<img src="https://raw.githubusercontent.com/SeoyeongShin/2023_1Graphics/main/img/result/EyeClassResult.JPG" width="400px" height="400px" title="EyeClassResult" alt="EyeClassResult"></img>
+<img src="https://raw.githubusercontent.com/SeoyeongShin/2023_1Graphics/main/img/result/EyeClassResult.JPG" width="640px" height="360px" title="EyeClassResult" alt="EyeClassResult"></img>
 <br/>
 
 ## 4. 소감 및 결론 
