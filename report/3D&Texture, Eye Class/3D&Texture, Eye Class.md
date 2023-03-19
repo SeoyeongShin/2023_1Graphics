@@ -1,6 +1,6 @@
-# 3D&Texture, Eye Class 
+# Graphics 개인 과제 - 1 
 
-## 1. Graphics 개인 과제 - 1
+## 1. 3D&Texture, Eye Class
 
 ### 1.1. 과제 목표 
 수업시간에 학습한 내용을 3회 이상 직접 구현해 보고, 두 소스코드를 Github에 올린다.
@@ -34,8 +34,8 @@ function draw() {
 ```
 
 ### 2.3. 실행 결과
-<img src="https://raw.githubusercontent.com/SeoyeongShin/2023_1Graphics/main/img/result/box_texture_result.jpg" width="400px" height="400px" title="px(픽셀) 크기 설정" alt="RubberDuck"></img>
-<img src="https://raw.githubusercontent.com/SeoyeongShin/2023_1Graphics/main/img/result/box_texture_2_result.jpg" width="400px" height="400px" title="px(픽셀) 크기 설정" alt="RubberDuck"></img>
+<img src="https://raw.githubusercontent.com/SeoyeongShin/2023_1Graphics/main/img/result/box_texture_result.jpg" width="400px" height="400px" title="boxTexture1" alt="boxTexture1"></img>
+<img src="https://raw.githubusercontent.com/SeoyeongShin/2023_1Graphics/main/img/result/box_texture_2_result.jpg" width="400px" height="400px" title="boxTexture2" alt="boxTexture2"></img>
 <br/>
 
 ## 3. Eye Class 구현
@@ -43,7 +43,53 @@ function draw() {
   * ㅇ
   * ㅇ
 ### 3.2. Code 
+```javascript
+// Eye Class
+let e1, e2, e3;
+function setup() {
+  createCanvas(640, 360);
+  noStroke();
+  e1 = new Eye(250, 16, 120);
+  e2 = new Eye(164, 185, 80);
+  e3 = new Eye(420, 230, 220);
+}
+function draw() {
+  background(102);
+  e1.update(mouseX, mouseY);
+  e2.update(mouseX, mouseY);
+  e3.update(mouseX, mouseY);
+  e1.display();
+  e2.display();
+  e3.display();
+}
+class Eye {
+  constructor(tx, ty, ts) {
+    this.x = tx;
+    this.y = ty;
+    this.size = ts;
+    this.angle = 0.0;
+  }
+
+  update(mx, my) {
+    this.angle = Math.atan2(my - this.y, mx - this.x);
+  }
+
+  display() {
+    push();
+    translate(this.x, this.y);
+    fill(255);
+    ellipse(0, 0, this.size, this.size);
+    rotate(this.angle);
+    fill(153, 204, 0);
+    ellipse(this.size / 4, 0, this.size / 2, this.size / 2);
+    pop();
+  }
+}
+```
+
 ### 3.3. 실행 결과
+<img src="https://raw.githubusercontent.com/SeoyeongShin/2023_1Graphics/main/img/result/EyeClassResult.JPG" width="400px" height="400px" title="EyeClassResult" alt="EyeClassResult"></img>
+<br/>
 
 ## 4. 소감 및 결론 
 
