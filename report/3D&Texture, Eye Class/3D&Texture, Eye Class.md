@@ -13,7 +13,7 @@
   * ㅇ
   * ㅇ
 ### 2.2. Code 
-'''
+```javascript
 let img;
 function preload(){
   img = loadImage("https://raw.githubusercontent.com/SeoyeongShin/2023_1Graphics/main/img/bird_parrot.png");
@@ -31,7 +31,7 @@ function draw() {
   texture(img);
   box(100);
 }
-'''
+```
 
 ### 2.3. 실행 결과
 <img src="https://raw.githubusercontent.com/SeoyeongShin/2023_1Graphics/main/img/result/box_texture_result.jpg" width="450px" height="450px" title="px(픽셀) 크기 설정" alt="RubberDuck"></img><br/>
