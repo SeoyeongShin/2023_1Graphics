@@ -1,5 +1,4 @@
 # 2023_1Graphics
-Seoyeong Shin's Graphics Class
+Seoyeong Shin's Graphics Class assignments
 
-## Graphics를 학습
-### WEBGL을 JavaScript 언어로 활용
+
