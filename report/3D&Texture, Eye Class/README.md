@@ -91,7 +91,7 @@ class Eye {
 ```
 
 ### 3.3. 실행 결과
-<img src="https://raw.githubusercontent.com/SeoyeongShin/2023_1Graphics/main/img/result/EyeClassResult.JPG" width="640px" height="360px" title="EyeClassResult" alt="EyeClassResult"></img>
+<img src="https://raw.githubusercontent.com/wjh2335/2023-ComputerGraphics/main/img/%EC%96%BC%EA%B5%B4%EC%9D%B8%EC%8B%9D%EC%B6%9C%EC%84%9D%EC%8B%9C%EC%8A%A4%ED%85%9Cgui(1).jpg"></img>
 <br/>
 
 ## 4. 소감 및 결론 
