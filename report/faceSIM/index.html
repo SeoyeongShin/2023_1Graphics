@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="face-api.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hahmlet&display=swap" rel="stylesheet">
+<title>출석 대체 얼굴 인식 시스템</title>
+
+<style>
+    * {
+        font-family: 'Hahmlet', serif;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+
+    h1 {
+        margin-bottom: 30px;
+    }
+    video {
+        margin-top: 10px;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+    }
+
+    .input-container {
+        margin-right: 20px;
+    }
+</style>
+
+<body>
+    <h1>출석 대체 얼굴 인식 시스템</h1>
+    <div style="display: flex;">
+        <div class="h">
+            <input type="text" id="phoneNumber" placeholder="Enter Phone Number">
+            <button onclick="startWebcam()">Start Webcam</button>
+            <br>
+            <video id="output1" width="400" height="300" autoplay muted></video>
+        </div>
+    </div>
+    <div class="row" style="display: flex;">
+        <button onclick="updateResult()">Click me</button>
+        <label for="distance">Distance:</label>
+        <input disabled value="-" id="distance" type="text" class="bold">
+    </div>
+    <script>
+        faceapi.nets.faceRecognitionNet.loadFromUri('models');
+        faceapi.nets.faceLandmark68Net.loadFromUri('models');
+        faceapi.nets.ssdMobilenetv1.loadFromUri('models');
+
+        let video;
+        let webcamStream;
+
+        async function startWebcam() {
+            video = document.getElementById('output1');
+      
+            try {
+                webcamStream = await navigator.mediaDevices.getUserMedia({ video: true });
+                video.srcObject = webcamStream;
+                video.addEventListener('loadedmetadata', () => {
+                    video.play();
+                });
+            } catch (error) {
+                console.error('Error accessing webcam:', error);
+            }
+        }
+
+        async function updateResult() {
+            const threshold = 0.6;
+            const phoneNumber = document.getElementById('phoneNumber').value;
+            const folderName = "images/" + phoneNumber + "/"; // 폴더 경로
+
+            const image2 = document.createElement('img');
+            image2.onload = async function () {
+                const canvas2 = document.createElement('canvas');
+                canvas2.width = image2.width;
+                canvas2.height = image2.height;
+                const ctx2 = canvas2.getContext('2d');
+                ctx2.drawImage(image2, 0, 0, canvas2.width, canvas2.height);
+                const descriptors2 = await faceapi.computeFaceDescriptor(canvas2);
+
+                const canvas1 = document.createElement('canvas');
+                canvas1.width = video.videoWidth;
+                canvas1.height = video.videoHeight;
+                const ctx1 = canvas1.getContext('2d');
+                ctx1.drawImage(video, 0, 0, canvas1.width, canvas1.height);
+                const descriptors1 = await faceapi.computeFaceDescriptor(canvas1);
+
+                const distance = faceapi.utils.round(
+                    await faceapi.euclideanDistance(descriptors1, descriptors2)
+                );
+                let text = distance;
+                let bgColor = '#ffffff';
+                if (distance > threshold) {
+                    text += ' (no match)';
+                    bgColor = '#ce7575';
+                }
+                $('#distance').val(text);
+                $('#distance').css('background-color', bgColor);
+                insertFaceSimilarityResult(distance, phoneNumber);
+
+            };
+
+            const imageFileName = folderName + "1.jpg";
+            image2.src = imageFileName;
+            //https://gist.github.com/livelikeabel/909d5dc35e96e3f0bed0cd28cddcdeaf
+        }
+        function insertFaceSimilarityResult(distance, phoneNumber) {
+            // Send AJAX request to the server
+            $.ajax({
+                type: "POST",
+                url: "/insert",
+                data: { distance: distance, phoneNumber: phoneNumber },
+                success: function (response) {
+                    console.log(response);
+                },
+                error: function (error) {
+                    console.error(error);
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
