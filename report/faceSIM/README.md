@@ -17,6 +17,10 @@ Face-Api를 study하고, ChatGPT를 활용해서
 
 # 3. 시스템 구현 
 <img src="https://raw.githubusercontent.com/SeoyeongShin/2023_1Graphics/main/img/faceSIM/faceS1.jpg"></img>
+<br>
+- 사용자 입력 기능 구현 
+- 사용자 버튼 구현
+- 얼굴 유사도 측정 기능 구현
 
 # 4. 시스템 사용 방법
 ### 1) 📞 전화번호 입력 
@@ -42,5 +46,8 @@ Face-Api를 study하고, ChatGPT를 활용해서
 
 # 6. 📂 참고문헌
 [1] github.com/jcshim/facesim
+<br>
 [2] https://github.com/WebDevSimplified/Face-Detection-JavaScript
+<br>
 [3] https://justadudewhohacks.github.io/face-api.js/docs/index.html
+<br>
