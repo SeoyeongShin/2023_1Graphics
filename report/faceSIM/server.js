@@ -8,12 +8,13 @@ const port = 3000;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+// 사용 환경에 맞게 수정
 const conn = {
-    host: '127.0.0.1',
-    port: '3306',
-    user: 'root',
-    password: '12343',
-    database: 'test'
+    host: 'localhost',
+    port: 'port',
+    user: 'user',
+    password: 'your_password',
+    database: 'your_database'
 };
 
 const connection = mysql.createConnection(conn);
