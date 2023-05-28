@@ -15,4 +15,5 @@ Face-Api를 study하고, ChatGPT를 활용해서
 1. 카메라 앞에 서면 얼굴을 추출한다.
 2. 얼굴 descriptor를 계산하여 DB와 비교하여 해당 학생을 출석 인정한다.
 
-# 3. 시스템 설계 및 구현
+# 3. 시스템 구현 및 사용 방법
+<img src="https://raw.githubusercontent.com/SeoyeongShin/2023_1Graphics/main/img/faceSIM/faceS1.jpg"></img>
