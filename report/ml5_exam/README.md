@@ -19,7 +19,7 @@ ml5.js의 다음 예제 중에 관심있는 예제 하나를 선택하고 활용
 
 
 # 3. 시스템 변형 및 구현 
-<br><img src="https://raw.githubusercontent.com/SeoyeongShin/2023_1Graphics/main/img/ml5_exam/ex_ui.png" width="70%"></img><br>
+<br><img src="https://raw.githubusercontent.com/SeoyeongShin/2023_1Graphics/main/img/ml5_exam/ex_ui.png" width="90%"></img><br>
 
 
 # 6. 📂 참고문헌
