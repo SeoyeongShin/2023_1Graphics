@@ -29,8 +29,8 @@ ml5.js의 다음 예제 중에 관심있는 예제 하나를 선택하고 활용
 
 # 4. 시스템 사용 방법 
 ### - 시스템에서 사용 가능한 모델
-SketchRNN은 디지털 라인 드로잉의 입력에서 이미지를 생성하기 위해 114개의 사전 훈련된 모델에 대한 액세스를 제공합니다. <br>
-때문에 아래 링크에서 볼 수 있는 사전 훈련된 모델에 의해 모델을 입력 및 로드할 수 있습니다. <br>
+SketchRNN은 디지털 라인 드로잉의 입력에서 이미지를 생성하기 위해 114개의 사전 훈련된 모델에 대한 액세스를 제공한다. <br>
+때문에 아래 링크에서 볼 수 있는 사전 훈련된 모델에 의해 모델을 입력 및 로드할 수 있다. <br>
 [models.js] https://github.com/ml5js/ml5-library/blob/main/src/SketchRNN/models.js <br>
 ex) 입력 모델: fish(X), pig(O)
 
@@ -48,10 +48,12 @@ ex) 입력 모델: fish(X), pig(O)
 # 5. 시스템 테스트
 ### 5.1 모델 입력 및 로드 
 pig를 입력하고 [Load] 버튼을 누른다. 
-<br><img src="https://raw.githubusercontent.com/SeoyeongShin/2023_1Graphics/main/img/ml5_exam/ex_pig.jpg" width="100%"></img><br>
+
+<img src="https://raw.githubusercontent.com/SeoyeongShin/2023_1Graphics/main/img/ml5_exam/ex_pig.jpg" width="100%"></img><br>
 ### 5.2 스케치 저장
 [Save] 버튼을 누르고 스케치를 다운 받는다.
-<br><img src="https://raw.githubusercontent.com/SeoyeongShin/2023_1Graphics/main/img/ml5_exam/my_drawing.jpg" width="60%"></img><br>
+
+<img src="https://raw.githubusercontent.com/SeoyeongShin/2023_1Graphics/main/img/ml5_exam/my_drawing.jpg" width="60%"></img><br>
 
 # 5. 결론 및 소감
 ml5.js 예제 중 SketchRNN 선택하고 변형해서 컴퓨터 그래픽스 수업 과제를 수행했습니다. 
