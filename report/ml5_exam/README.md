@@ -5,7 +5,8 @@ ml5.js의 다음 예제 중에 관심있는 예제 하나를 선택하고 활용
 
 ### 1.2 예제 선택
 본 과제에서는 SketchRNN basic을 예제로 선택한다. 
-<br><img src="https://raw.githubusercontent.com/SeoyeongShin/2023_1Graphics/main/img/ml5_exam/ex1.jpg" width="400px" height="250px"></img><br>
+
+<img src="https://raw.githubusercontent.com/SeoyeongShin/2023_1Graphics/main/img/ml5_exam/ex1.jpg" width="400px" height="250px"></img><br>
 
 - 코드 변경 전 특징
   * 'clear' 버튼을 이용해서 그림을 다시 그리는 단순한 기능만을 포함한다. 
