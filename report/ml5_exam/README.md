@@ -19,6 +19,7 @@ ml5.js의 다음 예제 중에 관심있는 예제 하나를 선택하고 활용
 
 
 # 3. 시스템 변형 및 구현 
+### 3.1 변형 내용 
 <br><img src="https://raw.githubusercontent.com/SeoyeongShin/2023_1Graphics/main/img/ml5_exam/ex_ui.png" width="100%"></img><br>
 
 - 사용자 입력 기능 구현
@@ -26,6 +27,10 @@ ml5.js의 다음 예제 중에 관심있는 예제 하나를 선택하고 활용
 - 스케치 저장 버튼 구현
 - 스타일 적용
 
+### 3.2 코드 
+[script.js] https://github.com/SeoyeongShin/2023_1Graphics/blob/main/report/ml5_exam/script.js
+
+[index.html] https://github.com/SeoyeongShin/2023_1Graphics/blob/main/report/ml5_exam/index.html
 
 # 4. 시스템 사용 방법 
 ### - 시스템에서 사용 가능한 모델
@@ -35,7 +40,7 @@ SketchRNN은 디지털 라인 드로잉의 입력에서 이미지를 생성하�
 ex) 입력 모델: fish(X), pig(O)
 
 ### 1) 모델 입력 
-사용하고 싶은 모델을 텍스트 필드에 입력한다.
+웹 서버를 실행 후, 사용하고 싶은 모델을 텍스트 필드에 입력한다.
 ### 2) 모델 로드
 입력된 모델을 로드할 수 있도록 [Load] 버튼을 누른다.
 ### 3) 스케치 저장
