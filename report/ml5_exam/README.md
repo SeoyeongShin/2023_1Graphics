@@ -45,10 +45,13 @@ ex) 입력 모델: fish(X), pig(O)
 
 <br>
 
-### - Case.1
-<img src="https://raw.githubusercontent.com/SeoyeongShin/2023_1Graphics/main/img/faceSIM/faceS2.jpg" width="400px" height="250px"></img>
-### - Case.2
-<img src="https://raw.githubusercontent.com/SeoyeongShin/2023_1Graphics/main/img/faceSIM/faceS3.jpg" width="400px" height="250px"></img>
+# 5. 시스템 테스트
+### 5.1 모델 입력 및 로드 
+pig를 입력하고 [Load] 버튼을 누른다. 
+<img src="https://raw.githubusercontent.com/SeoyeongShin/2023_1Graphics/main/img/ml5_exam/ex_pig.jpg" width="90%"></img><br>
+### 5.2 스케치 저장
+[Save] 버튼을 누르고 스케치를 다운 받는다.
+<img src="https://raw.githubusercontent.com/SeoyeongShin/2023_1Graphics/main/img/ml5_exam/my_drawing.jpg" width="90%"></img><br>
 
 # 5. 결론 및 소감
 ml5.js 예제 중 SketchRNN 선택하고 변형해서 컴퓨터 그래픽스 수업 과제를 수행했습니다. 
@@ -57,7 +60,7 @@ ml5.js 예제 중 SketchRNN 선택하고 변형해서 컴퓨터 그래픽스 수
 이후 예제 코드를 분석하고 조금씩 변형해가면서 기능을 수정하거나 새로운 기능을 추가하는 등 새로운 결과물을 만들어내는 과정이 매우 흥미로웠습니다. 
 또한 이 과제를 통해 머신러닝 모델과의 상호작용이 어떻게 이루어지는지를 이해하는 데 도움이 되었습니다. 
 사용자의 입력에 따라 모델이 예측한 결과를 시각화하고, 그 결과를 다시 모델에 입력으로 전달하는 과정을 경험하면서 머신 러닝의 작동 원리를 실제로 체감할 수 있었습니다.
-이러한 경험을 통해 컴퓨터 그래픽스와 머신 러닝에 대한 흥미가 더욱 커졌습니다. 앞으로 더 많은 도전과 연구를 통해 이 분야에서 더 나아가고 싶다는 동기를 얻게 되었습니다.
+이러한 경험을 통해 컴퓨터 그래픽스와 머신러닝에 대한 흥미가 더욱 커졌습니다. 앞으로 더 많은 도전과 연구를 통해 이 분야에서 더 나아가고 싶다는 동기를 얻게 되었습니다.
 감사합니다. 
 
 # 6. 📂 참고문헌
@@ -67,5 +70,5 @@ ml5.js 예제 중 SketchRNN 선택하고 변형해서 컴퓨터 그래픽스 수
 <br>
 [3] https://editor.p5js.org/ml5/sketches/SketchRNN_basic
 <br>
-[4] chatGPT
+[4] https://chat.openai.com
 <br>
