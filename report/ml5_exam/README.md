@@ -48,10 +48,10 @@ ex) 입력 모델: fish(X), pig(O)
 # 5. 시스템 테스트
 ### 5.1 모델 입력 및 로드 
 pig를 입력하고 [Load] 버튼을 누른다. 
-<img src="https://raw.githubusercontent.com/SeoyeongShin/2023_1Graphics/main/img/ml5_exam/ex_pig.jpg" width="90%"></img><br>
+<br><img src="https://raw.githubusercontent.com/SeoyeongShin/2023_1Graphics/main/img/ml5_exam/ex_pig.jpg" width="100%"></img><br>
 ### 5.2 스케치 저장
 [Save] 버튼을 누르고 스케치를 다운 받는다.
-<img src="https://raw.githubusercontent.com/SeoyeongShin/2023_1Graphics/main/img/ml5_exam/my_drawing.jpg" width="90%"></img><br>
+<br><img src="https://raw.githubusercontent.com/SeoyeongShin/2023_1Graphics/main/img/ml5_exam/my_drawing.jpg" width="60%"></img><br>
 
 # 5. 결론 및 소감
 ml5.js 예제 중 SketchRNN 선택하고 변형해서 컴퓨터 그래픽스 수업 과제를 수행했습니다. 
