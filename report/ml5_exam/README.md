@@ -12,13 +12,13 @@ ml5.js의 다음 예제 중에 관심있는 예제 하나를 선택하고 활용
   * 코드 실행을 통해서 코드 내에서 고정된 모델만을 로드할 수 있어서, 새 모델을 로드하기에 번거롭다. 
    <img src="https://raw.githubusercontent.com/SeoyeongShin/2023_1Graphics/main/img/ml5_exam/ex_code.jpg" width="60%"></img><br>
 
-# 2. 🧠 SketchRNN 변형 아이디어 
+# 2. 🧠 SketchRNN 변형을 위한 초기 아이디어 
   * 로드하려고 하는 모델을 입력할 수 있는 사용자 입력 기능을 구현한다. 
   * 입력된 모델을 로드하는 모델 로드 버튼 기능을 구현한다. 
   * 모델을 로드하고 캔버스에 스케치된 그림을 저장할 수 있도록 저장 기능을 구현한다. 
 
 
-# 3. 시스템 변형 및 구현 
+# 3. 🛠 시스템 변형 및 구현 
 ### 3.1 변형 내용 
 <br><img src="https://raw.githubusercontent.com/SeoyeongShin/2023_1Graphics/main/img/ml5_exam/ex_ui.png" width="100%"></img><br>
 
@@ -32,7 +32,7 @@ ml5.js의 다음 예제 중에 관심있는 예제 하나를 선택하고 활용
 
 [index.html](https://github.com/SeoyeongShin/2023_1Graphics/blob/main/report/ml5_exam/index.html)
 
-# 4. 시스템 사용 방법 
+# 4. 📖 시스템 사용 방법 
 ### - 시스템에서 사용 가능한 모델
 SketchRNN은 디지털 라인 드로잉의 입력에서 이미지를 생성하기 위해 114개의 사전 훈련된 모델에 대한 액세스를 제공한다. <br>
 때문에 아래 링크에서 볼 수 있는 사전 훈련된 모델에 의해 모델을 입력 및 로드할 수 있다. <br>
@@ -50,7 +50,7 @@ ex) 입력 모델: fish(X), pig(O)
 
 <br>
 
-# 5. 시스템 테스트
+# 5. 🖥 시스템 테스트
 ### 5.1 모델 입력 및 로드 
 pig를 입력하고 [Load] 버튼을 누른다. 
 
@@ -60,7 +60,7 @@ pig를 입력하고 [Load] 버튼을 누른다.
 
 <img src="https://raw.githubusercontent.com/SeoyeongShin/2023_1Graphics/main/img/ml5_exam/my_drawing.jpg" width="60%"></img><br>
 
-# 5. 결론 및 소감
+# 5. 👩‍💻 결론 및 소감
 ml5.js 예제 중 SketchRNN 선택하고 변형해서 컴퓨터 그래픽스 수업 과제를 수행했습니다. 
 본 과제를 통해 머신러닝과 그래픽스의 융합을 경험하며 창의적인 작업을 할 수 있는 기회를 가졌습니다. 
 과제 초반에는 ml5.js와 SketchRNN을 사용하는 방법에 익숙하지 않았지만, 
