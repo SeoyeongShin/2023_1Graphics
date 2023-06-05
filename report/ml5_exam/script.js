@@ -5,7 +5,8 @@
 
 /* ===
 ml5 Example
-SketchRNN
+SketchRNN 변형하기 
+2023.06.05.
 === */
 
 // The SketchRNN model
@@ -63,9 +64,6 @@ function startDrawing() {
   x = width / 2;
   y = height / 2;
 
-  //model.reset();
-  // Generate the first stroke path
-  //model.generate(gotStroke);
   if (model) {
     model.reset();
     // Generate the first stroke path
