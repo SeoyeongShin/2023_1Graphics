@@ -28,9 +28,9 @@ ml5.js의 다음 예제 중에 관심있는 예제 하나를 선택하고 활용
 - 스타일 적용
 
 ### 3.2 변형 코드 링크
-[script.js] (https://github.com/SeoyeongShin/2023_1Graphics/blob/main/report/ml5_exam/script.js)
+[script.js](https://github.com/SeoyeongShin/2023_1Graphics/blob/main/report/ml5_exam/script.js)
 
-[index.html] (https://github.com/SeoyeongShin/2023_1Graphics/blob/main/report/ml5_exam/index.html)
+[index.html](https://github.com/SeoyeongShin/2023_1Graphics/blob/main/report/ml5_exam/index.html)
 
 # 4. 시스템 사용 방법 
 ### - 시스템에서 사용 가능한 모델
