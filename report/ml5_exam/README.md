@@ -19,7 +19,33 @@ ml5.js의 다음 예제 중에 관심있는 예제 하나를 선택하고 활용
 
 
 # 3. 시스템 변형 및 구현 
-<br><img src="https://raw.githubusercontent.com/SeoyeongShin/2023_1Graphics/main/img/ml5_exam/ex_ui.png" width="90%"></img><br>
+<br><img src="https://raw.githubusercontent.com/SeoyeongShin/2023_1Graphics/main/img/ml5_exam/ex_ui.png" width="100%"></img><br>
+
+- 사용자 입력 기능 구현
+- 모델 로드 버튼 구현
+- 스케치 저장 버튼 구현
+- 스타일 적용
+
+
+# 4. 시스템 사용 방법
+### 1) 모델 입력 
+사용하고 싶은 모델을 텍스트 필드에 입력한다.
+### 2) 모델 로드
+입력된 모델을 로드할 수 있도록 [Load] 버튼을 누른다. 
+### 3) 스케치 저장
+캔버스에 그려진 그림을 저장할 수 있도록 [Save] 버튼을 누른다. 
+### 4) 스케치 다시 그리기(원기능)
+로드된 모델을 캔버스에 다시 그릴 수 있도록 [clear] 버튼을 누른다.
+
+<br>
+
+### - Case.1
+<img src="https://raw.githubusercontent.com/SeoyeongShin/2023_1Graphics/main/img/faceSIM/faceS2.jpg" width="400px" height="250px"></img>
+### - Case.2
+<img src="https://raw.githubusercontent.com/SeoyeongShin/2023_1Graphics/main/img/faceSIM/faceS3.jpg" width="400px" height="250px"></img>
+
+# 5. 결론 및 소감
+
 
 
 # 6. 📂 참고문헌
